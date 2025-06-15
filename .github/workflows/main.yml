@@ -2,9 +2,12 @@ name: Main
 
 on: push
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env: 
       CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
       CI_COMMIT_AUTHOR: Continuous Integration
