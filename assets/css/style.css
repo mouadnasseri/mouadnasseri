@@ -21,95 +21,51 @@
    * colors
    */
 
-  /* gradient */
-
-  --bg-gradient-onyx: linear-gradient(
+  /* gradient */--bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
     hsl(0, 0%, 19%) 97%
-  );
-  --bg-gradient-jet: linear-gradient(
+  );--bg-gradient-jet: linear-gradient(
     to bottom right, 
     hsla(240, 1%, 18%, 0.251) 0%, 
     hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(
+  ), hsl(240, 2%, 13%);--bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     hsl(45, 100%, 71%) 0%, 
     hsla(36, 100%, 69%, 0) 50%
-  );
-  --bg-gradient-yellow-2: linear-gradient(
+  );--bg-gradient-yellow-2: linear-gradient(
     135deg, 
     hsla(45, 100%, 71%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
-  --border-gradient-onyx: linear-gradient(
+  ), hsl(240, 2%, 13%);--border-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
-  );
-  --text-gradient-yellow: linear-gradient(
+    hsla(0, 0%, 25%, 0) 0%
+  );--text-gradient-yellow: linear-gradient(
     to right, 
     hsl(45, 100%, 72%), 
     hsl(35, 100%, 68%)
   );
 
-  /* solid */
-
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  /* solid */--jet: hsl(0, 0%, 22%);--onyx: hsl(240, 1%, 17%);--eerie-black-1: hsl(240, 2%, 13%);--eerie-black-2: hsl(240, 2%, 12%);--smoky-black: hsl(0, 0%, 7%);--white-1: hsl(0, 0%, 100%);--white-2: hsl(0, 0%, 98%);--orange-yellow-crayola: hsl(45, 100%, 72%);--vegas-gold: hsl(45, 54%, 58%);--light-gray: hsl(0, 0%, 84%);--light-gray-70: hsla(0, 0%, 84%, 0.7);--bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
    * typography
    */
 
-  /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  /* font-family */--ff-poppins: 'Poppins', sans-serif;
 
-  /* font-size */
-  --fs-1: 24px;
-  --fs-2: 18px;
-  --fs-3: 17px;
-  --fs-4: 16px;
-  --fs-5: 15px;
-  --fs-6: 14px;
-  --fs-7: 13px;
-  --fs-8: 11px;
+  /* font-size */--fs-1: 24px;--fs-2: 18px;--fs-3: 17px;--fs-4: 16px;--fs-5: 15px;--fs-6: 14px;--fs-7: 13px;--fs-8: 11px;
 
-  /* font-weight */
-  --fw-300: 300;
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-600: 600;
+  /* font-weight */--fw-300: 300;--fw-400: 400;--fw-500: 500;--fw-600: 600;
 
   /**
    * shadow
-   */
-  
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+   */--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);--shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);--shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);--shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);--shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
   /**
    * transition
-   */
-
-  --transition-1: 0.25s ease;
-  --transition-2: 0.5s ease-in-out;
-
-}
+   */--transition-1: 0.25s ease;--transition-2: 0.5s ease-in-out;}
 
 
 
@@ -165,6 +121,14 @@ body { background: var(--smoky-black); }
   #REUSED STYLE
 \*-----------------------------------*/
 
+.a {
+  color: var(--vegas-gold);
+}
+
+.a:hover {
+  text-decoration: underline;
+}
+
 .sidebar,
 article {
   background: var(--eerie-black-2);
@@ -183,6 +147,7 @@ article {
 }
 
 .icon-box {
+  filter: grayscale(1);
   position: relative;
   background: var(--border-gradient-onyx);
   width: 30px;
@@ -542,11 +507,11 @@ main {
 
 .service-icon-box { margin-bottom: 10px; }
 
-.service-icon-box img { margin: auto; }
+.service-icon-box img {margin: auto;filter: grayscale(1);}
 
 .service-content-box { text-align: center; }
 
-.service-item-title { margin-bottom: 7px; }
+.service-item-title {margin-bottom: 7px;}
 
 .service-item-text {
   color: var(--light-gray);
@@ -821,6 +786,19 @@ main {
   background: var(--text-gradient-yellow);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-item p {
+  display: ruby;
+  color: var(--light-gray);
+}
+
+.timeline-item ul {
+  margin-top: 1rem;
+  margin-left: 15px;
+}
+.timeline-item li {
+  list-style: disc;
 }
 
 .timeline-text {
@@ -1337,7 +1315,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box {border-radius: 50%;}
 
   .avatar-box img { width: 120px; }
 
@@ -1424,7 +1402,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-avatar-box {
     transform: translate(30px, -30px);
-    border-radius: 20px;
+    border-radius: 50%;
   }
 
   .testimonials-avatar-box img { width: 80px; }
