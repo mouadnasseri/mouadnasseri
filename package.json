@@ -1,0 +1,27 @@
+{
+  "name": "mouadnasseri",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "serve": "lite-server dist",
+    "qrcode:svg": "qrcode 'https://mouad.design' -o assets/images/qrcode.svg -t svg",
+    "qrcode:png": "qrcode 'https://mouad.design' -o assets/images/qrcode.png -t png"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@node-minify/cli": "9.0.2",
+    "@node-minify/cssnano": "9.0.1",
+    "@node-minify/html-minifier": "9.0.1",
+    "@node-minify/uglify-js": "9.0.1",
+    "glob": "11.0.3",
+    "lite-server": "2.6.1",
+    "qrcode": "1.5.4",
+    "sharp": "0.34.2",
+    "svgo": "3.3.2"
+  }
+}
