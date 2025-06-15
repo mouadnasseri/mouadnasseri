@@ -124,6 +124,7 @@ body { background: var(--smoky-black); }
 .a {
   color: var(--vegas-gold);
   display: inline-flex;
+  margin: 0 5px;
 }
 
 .a:hover {
