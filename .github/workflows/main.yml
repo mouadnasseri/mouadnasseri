@@ -28,7 +28,7 @@ jobs:
         env:
           REPO: self
           BRANCH: gh-build
-          FOLDER: build
+          FOLDER: dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   # Deploy job
   deploy:
