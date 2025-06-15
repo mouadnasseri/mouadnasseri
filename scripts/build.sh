@@ -8,6 +8,7 @@ mkdir -p dist/assets/js/ dist/assets/css/
 
 # Copy assets
 cp -R assets/images dist/assets
+cp CNAME dist
 
 npx node-minify --compressor uglify-js --input assets/js/script.js --output dist/assets/js/script.js
 npx node-minify --compressor cssnano --input assets/css/style.css --output dist/assets/css/style.css
