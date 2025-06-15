@@ -81,6 +81,10 @@
   box-sizing: border-box;
 }
 
+ion-icon {
+  pointer-events: none;
+}
+
 a { text-decoration: none; }
 
 li { list-style: none; }
