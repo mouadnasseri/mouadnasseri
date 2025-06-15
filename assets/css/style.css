@@ -1459,8 +1459,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .modal-img-wrapper > img {
     display: block;
-    flex-grow: 1;
+    position: absolute;
     width: 35px;
+    top: 50%;
   }
 
   /* clients */
