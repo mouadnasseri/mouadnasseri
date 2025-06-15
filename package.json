@@ -6,7 +6,8 @@
   "scripts": {
     "build": "./scripts/build.sh",
     "serve": "lite-server dist",
-    "generate:qrcode": "qrcode 'https://mouad.design' -o assets/images/qrcode.svg -t svg"
+    "qrcode:svg": "qrcode 'https://mouad.design' -o assets/images/qrcode.svg -t svg",
+    "qrcode:png": "qrcode 'https://mouad.design' -o assets/images/qrcode.png -t png"
   },
   "keywords": [],
   "author": "",
