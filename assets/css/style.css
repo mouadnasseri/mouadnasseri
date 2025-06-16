@@ -292,7 +292,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active {max-height: 435px;}
+.sidebar.active {max-height: 445px;}
 
 .sidebar-info {
   position: relative;
@@ -402,10 +402,9 @@ main {
 
 .social-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 15px;
-  padding-bottom: 4px;
+  padding-bottom: 10px;
   padding-left: 7px;
 }
 
@@ -448,7 +447,7 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  font-size: var(--fs-5);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
@@ -1539,8 +1538,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .form-btn ion-icon { font-size: 18px; }
 
-  .social-list { justify-content: center; }
-
 }
 
 
@@ -1870,8 +1867,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 15px 0;
     opacity: 0;
   }
-
-  .social-list { justify-content: center; }
 
 
 
